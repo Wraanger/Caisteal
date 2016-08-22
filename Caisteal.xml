@@ -1,0 +1,12 @@
+<Ui xmlns='http://www.blizzard.com/wow/ui'>
+	<Script file='modules/core/init.lua'/>
+	<Script file='modules/core/events.lua'/>
+	<Script file='modules/core/scaling.lua'/>
+	<Script file='modules/core/constants.lua'/>
+	<Script file='modules/core/utils.lua'/>
+	<Script file='modules/core/output.lua'/>
+	<Script file='modules/core/functions.lua'/>
+	
+	<Script file='modules/unitframes/tags.lua'/>
+	<Script file='modules/unitframes/layout.lua'/>
+</Ui>

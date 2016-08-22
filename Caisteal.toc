@@ -1,0 +1,12 @@
+## Interface: 70000
+## Author: Valle
+## Version: Alpha
+## Title: Caisteal
+## Notes: Personal UI
+## SavedVariablesPerCharacter: CaistealSettings
+
+embeds\oUF\oUF.xml
+embeds\LibStub\LibStub.lua
+embeds\LibChatAnims\LibChatAnims\LibChatAnims.lua
+
+Caisteal.xml
