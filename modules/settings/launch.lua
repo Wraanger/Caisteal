@@ -23,5 +23,10 @@ StaticPopupDialogs.CAISTEAL_INITIALIZE = {
 	OnCancel = Decline,
 	timeout = 0
 }
-SlashCmdList.CAISTEAL_INITIALIZE = Initialize()
-SLASH_CAISTEAL_INITIALIZE1 = "/init"
+local function launch()
+	if(not CaistealSettings) then
+		StaticPopup_Show('CAISTEAL_INITIALIZE')
+	end
+	F.UnregisterEvent('PLAYER_LOGIN', launch)
+end
+F.RegisterEvent('PLAYER_LOGIN', launch)

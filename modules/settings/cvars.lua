@@ -85,9 +85,12 @@ local cvars = {
 
 	-- Sound
 	Sound_EnableAllSound = 1,
-	Sound_EnableSFX = 0,
+	Sound_EnableSFX = 1,
 	Sound_EnableMusic = 0,
-	Sound_EnableAmbience = 0,
+	Sound_EnableEmoteSounds = 1,
+	Sound_EnablePetBattleMusic = 0,
+	Sound_EnablePetSounds = 0,
+	Sound_EnableAmbience = 1,
 	Sound_EnableDialog = 1,
 	Sound_EnableErrorSpeech = 0,
 	Sound_EnableSoundWhenGameIsInBG = 1,
@@ -96,7 +99,7 @@ local cvars = {
 	Sound_EnableDSPEffects = 0,
 	Sound_MasterVolume = 0.2,
 	Sound_SFXVolume = 0.3,
-	Sound_MusicVolume = 0.2,
+	Sound_MusicVolume = 0,
 	Sound_AmbienceVolume = 0.1,
 	Sound_DialogVolume = 0.6,
 }
