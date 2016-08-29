@@ -1,12 +1,7 @@
-## Interface: 70000
-## Author: Valle
-## Version: Alpha
+﻿## Interface: 70000
 ## Title: Caisteal
-## Notes: Personal UI
-## SavedVariablesPerCharacter: CaistealSettings
-
-embeds\oUF\oUF.xml
-embeds\LibStub\LibStub.lua
-embeds\LibChatAnims\LibChatAnims\LibChatAnims.lua
+## Notes: Minimalistic user interface.
+## Author: Valle/Warsong
+## Version: 0.0.1
 
 Caisteal.xml
