@@ -3,5 +3,5 @@
 ## Notes: Minimalistic user interface.
 ## Author: Valle/Warsong
 ## Version: 0.0.1
-
+## SavedVariablesPerCharacter: CaistealSettings
 Caisteal.xml

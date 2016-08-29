@@ -7,10 +7,10 @@ local F, C = unpack(select(2, ...))
 
 -- [[ Event handler ]]
 
-local eventFrame = CreateFrame("Frame")
+local eventFrame = CreateFrame('Frame')
 local events = {}
 
-eventFrame:SetScript("OnEvent", function(_, event, ...)
+eventFrame:SetScript('OnEvent', function(_, event, ...)
 	for i = #events[event], 1, -1 do
 		events[event][i](event, ...)
 	end
@@ -44,30 +44,27 @@ end
 
 F.debugEvents = function()
 	for event in next, events do
-		print(event..": "..#events[event])
+		print(event..': '..#events[event])
 	end
 end
 
 -- [[ For secure frame hiding ]]
-local hider = CreateFrame("Frame", "FreeUIHider", UIParent)
+local hider = CreateFrame('Frame', 'CaistealHider', UIParent)
 hider:Hide()
 
 -- [[ Resolution support ]]
 local updateScale = function(event)
 	if not InCombatLockdown() then
 		-- we don't bother with the cvar because of high resolution shenanigans
-		UIParent:SetScale(768/string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"))
-		ChatFrame1:ClearAllPoints()
-		ChatFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 30, 30)
-		else
-			F.RegisterEvent("PLAYER_REGEN_ENABLED", updateScale)
-		end
-
-		if event == "PLAYER_REGEN_ENABLED" then
-			F.UnregisterEvent("PLAYER_REGEN_ENABLED", updateScale)
-		end
+		UIParent:SetScale(768/string.match(({GetScreenResolutions()})[GetCurrentResolution()], '%d+x(%d+)'))
+	else
+		F.RegisterEvent('PLAYER_REGEN_ENABLED', updateScale)
 	end
-	print(UIParent:getScale())
+
+	if event == 'PLAYER_REGEN_ENABLED' then
+		F.UnregisterEvent('PLAYER_REGEN_ENABLED', updateScale)
+	end
+	print(UIParent:GetScale())
 end
-F.RegisterEvent("VARIABLES_LOADED", updateScale)
-F.RegisterEvent("UI_SCALE_CHANGED", updateScale)
+F.RegisterEvent('VARIABLES_LOADED', updateScale)
+F.RegisterEvent('UI_SCALE_CHANGED', updateScale)

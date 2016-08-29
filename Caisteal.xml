@@ -2,4 +2,7 @@
 	<Script file='modules/core/init.lua'/>
 	<Script file='modules/core/api.lua'/>
 	
+	<Script file='modules/settings/launch.lua'/>
+	<Script file='modules/settings/cvars.lua'/>
+	
 </Ui>
