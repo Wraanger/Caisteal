@@ -1,8 +1,23 @@
-﻿<Ui xmlns='http://www.blizzard.com/wow/ui'>
+<Ui xmlns='http://www.blizzard.com/wow/ui'>
 	<Script file='modules/core/init.lua'/>
+	<Script file='modules/core/constants.lua'/>
 	<Script file='modules/core/api.lua'/>
 	
 	<Script file='modules/settings/launch.lua'/>
 	<Script file='modules/settings/cvars.lua'/>
+	
+	<Script file='modules/maps/worldmap.lua'/>
+	<Script file='modules/maps/minimap.lua'/>
+	<Script file='modules/maps/exp.lua'/>
+	
+	<Script file='modules/quest/objective.lua'/>
+	
+	<Script file='modules/infobar/bar.lua'/>
+	<Script file='modules/infobar/clock.lua'/>
+	<Script file='modules/infobar/location.lua'/>
+	<Script file='modules/infobar/hearth.lua'/>
+	
+	<Script file='modules/unitframes/tags.lua'/>
+	<Script file='modules/unitframes/layout.lua'/>
 	
 </Ui>

@@ -1,4 +1,4 @@
-﻿local F, C = unpack(select(2, ...))
+local F, C = unpack(select(2, ...))
 
 -- list of all settings listed in the interface options
 local cvars = {

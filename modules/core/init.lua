@@ -1,4 +1,4 @@
-﻿local addon, core = ...
+local addon, core = ...
 
 core[1] = {} -- Functions
 core[2] = {} -- Constants
@@ -64,7 +64,6 @@ local updateScale = function(event)
 	if event == 'PLAYER_REGEN_ENABLED' then
 		F.UnregisterEvent('PLAYER_REGEN_ENABLED', updateScale)
 	end
-	print(UIParent:GetScale())
 end
 F.RegisterEvent('VARIABLES_LOADED', updateScale)
 F.RegisterEvent('UI_SCALE_CHANGED', updateScale)
