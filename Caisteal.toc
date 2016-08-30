@@ -4,4 +4,7 @@
 ## Author: Valle/Warsong
 ## Version: 0.0.1
 ## SavedVariablesPerCharacter: CaistealSettings
+
+embeds\oUF\oUF.xml
+
 Caisteal.xml
